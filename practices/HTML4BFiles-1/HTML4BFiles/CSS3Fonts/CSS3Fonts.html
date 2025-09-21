@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS3 Practice Examples</title>
+
+<style type="text/css">
+
+/* Step 7: Font embedding examples */
+@font-face {
+    font-family: 'BleedingCowboys';
+    src: url('fonts/BleedingCowboys.eot'); 
+    src: local('BleedingCowboys'), url('fonts/BleedingCowboys.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Bendable';
+    src: url('fonts/Bendable.eot'); 
+    src: local('Bendable'), url('fonts/Bendable.ttf') format('truetype');
+}
+
+/* Example text using BleedingCowboys */
+p {
+    font-family: BleedingCowboys, Geneva, serif;
+    font-size: 36px;
+}
+
+/* Example heading using Bendable */
+h2 {
+    font-family: Bendable, Arial, sans-serif;
+    font-size: 32px;
+    color: darkblue;
+    text-shadow: 2px 2px 4px gray; /* Step 3: text-shadow */
+}
+
+/* Step 2: border-radius examples */
+.rounded-box {
+    width: 250px;
+    height: 120px;
+    border: 2px solid black;
+    border-radius: 40px 0 40px 0;
+    margin: 20px;
+    padding: 10px;
+    background-color: lightyellow;
+}
+
+/* Step 3: box-shadow example */
+.shadow-box {
+    width: 250px;
+    height: 120px;
+    border: 2px solid #333;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.4);
+    margin: 20px;
+    padding: 10px;
+    background-color: lightblue;
+}
+
+/* Step 4: border-image example (requires a border image in /images/) */
+.border-image-box {
+    width: 250px;
+    height: 120px;
+    border: 20px solid transparent;
+    border-image: url('images/border.png') 50 round;
+    margin: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Step 5: background-size example */
+.bg-example {
+    width: 300px;
+    height: 150px;
+    background: url('images/background.jpg') no-repeat center;
+    background-size: cover;
+    border: 2px solid black;
+    margin: 20px;
+}
+
+/* Step 6: word-wrap example */
+.word-wrap-example {
+    width: 250px;
+    border: 1px solid #999;
+    word-wrap: break-word; /* forces long words to wrap */
+    padding: 10px;
+    margin: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<p>
+    What is your favorite Western movie? This font is called Bleeding Cowboys. Does it make you think of the wild, wild West?
+</p>
+
+<h2>This heading uses the Bendable font</h2>
+
+<div class="rounded-box">Border-Radius Example</div>
+
+<div class="shadow-box">Box-Shadow Example</div>
+
+<div class="border-image-box">Border-Image Example</div>
+
+<div class="bg-example"></div>
+
+<div class="word-wrap-example">
+    Thisisareallylongwordthatwouldnormallyoverflowbutword-wrapletsitbreak.
+</div>
+
+</body>
+</html>
