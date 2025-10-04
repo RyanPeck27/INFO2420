@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ryan's Class Schedule</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  .center-div {
+    text-align: center;
+  }
+
+  table.schedule {
+    margin: auto;
+    border-collapse: collapse;
+    width: 550px;
+    border: 2px solid black;
+  }
+
+  th, td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: center;
+  }
+
+  caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #003300;
+    padding: 8px;
+  }
+
+  col.first-col {
+    background-color: #CCCCCC;
+    width: 25%;
+  }
+
+  col.days {
+    background-color: #99FF66;
+    width: 15%;
+  }
+</style>
+</head>
+<body>
+  <div class="center-div">
+    <table class="schedule">
+      <caption>My Class Schedule</caption>
+      <colgroup>
+        <col class="first-col">
+      </colgroup>
+      <colgroup span="5" class="days"></colgroup>
+
+      <!-- Header Row -->
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+
+      <!-- INFO-2420 -->
+      <tr>
+        <td>INFO-2420</td>
+        <td colspan="5">Online 24/7</td>
+      </tr>
+
+      <!-- FIN-1060 -->
+      <tr>
+        <td>FIN-1060</td>
+        <td colspan="5">Online 24/7</td>
+      </tr>
+
+      <!-- IT-1510 -->
+      <tr>
+        <td>IT-1510</td>
+        <td colspan="5">Online 24/7</td>
+      </tr>
+
+    </table>
+  </div>
+</body>
+</html>
