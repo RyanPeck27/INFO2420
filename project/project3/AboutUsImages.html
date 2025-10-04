@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us: Rent A Pet</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        /* --- Embedded style sheet (same sheet will be used on Tributes.html) --- */
+
+        /* Color palette (warm) */
+        :root{
+            --bg: #FFF8F0;        /* very light warm cream */
+            --text: #333333;      /* dark gray for readable text */
+            --accent: #C1572B;    /* warm terracotta (headings / accents) */
+            --accent-2: #8A4B2A;  /* darker accent for links */
+            --muted: #6B8E23;     /* olive-green secondary accent */
+            --card: #FFFFFF;      /* white for content blocks if needed */
+        }
+
+        /* Page defaults */
+        body{
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-size: 100%; /* base font-size (let user scale) */
+            line-height: 1.5;
+            margin: 1rem 1.25rem;
+        }
+
+        /* Headings */
+        h1{
+            color: var(--accent);
+            font-size: 1.8rem;
+            margin-bottom: 0.2rem;
+        }
+        h2{
+            color: var(--accent-2);
+            font-size: 1.25rem;
+            margin-top: 0.8rem;
+            margin-bottom: 0.2rem;
+        }
+        h3{
+            color: var(--muted);
+            font-size: 1.05rem;
+            margin-bottom: 0.25rem;
+        }
+
+        /* Navigation */
+        nav ul{
+            list-style: none;
+            padding-left: 0;
+            margin: .25rem 0 0.9rem 0;
+            display:flex;
+            gap: .8rem;
+            flex-wrap:wrap;
+        }
+        nav a{
+            text-decoration: none;
+            color: var(--accent-2);
+            padding: .25rem .45rem;
+            border-radius: 6px;
+        }
+        nav a:hover,
+        nav a:focus{
+            background-color: #FFEDE2;
+            outline: none;
+        }
+
+        /* Paragraphs and lists */
+        p, li{
+            color: var(--text);
+            font-size: 1rem;
+        }
+        hr{
+            border: none;
+            height: 1px;
+            background: #E6D7CE;
+            margin: 1rem 0;
+        }
+
+        /* Links */
+        a:link{ color: var(--accent-2); }
+        a:visited{ color: #6B3B2A; }
+        a:hover{ color: var(--accent); text-decoration: underline; }
+
+        /* Image classes */
+        .about-img{
+            float: left;
+            margin: 0 .9rem .9rem 0;
+            padding: 6px;
+            background: rgba(193,87,43,0.04);
+            border-radius: 6px;
+            width: 250px; /* exact image width */
+            height: 165px; /* exact image height */
+            object-fit: cover;
+        }
+        .tribute-img{
+            float: right;
+            margin: 0 0 .6rem .9rem;
+            padding: 6px;
+            border-radius: 6px;
+            width: 160px;
+            height: 106px;
+            object-fit: cover;
+        }
+
+        /* Ensure footer/clear floats */
+        .clear { clear: both; }
+
+        /* Accessibility / small screens adjustments */
+        @media (max-width:520px){
+            .about-img, .tribute-img{
+                float:none;
+                display:block;
+                margin: 0 auto 0.9rem auto;
+            }
+            nav ul{ gap: .4rem; }
+        }
+    </style>
+</head>
+<body id="top">
+
+    <h1>About Us: Rent A Pet</h1>
+
+    <!-- floated About image (from Images folder) -->
+    <img src="C:\Users\15095\OneDrive\Desktop\project3\Images\AboutUs\CatandDogSm.jpg"
+         alt="Friendly dog and cat side-by-side"
+         class="about-img"
+         width="250" height="165">
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#beginning">In the Beginning</a></li>
+            <li><a href="#today">Where We Are Today</a></li>
+            <li><a href="#unique">What Makes Us Unique</a></li>
+            <li><a href="#press">Press Releases</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <!-- Section 1 -->
+    <section id="beginning">
+        <h2>In the Beginning...</h2>
+        <p>Rent A Pet began with a family that loved dogs. George Smith and his wife Carol owned two Irish Setters. These dogs were pets to the Smith family children and extended family members. One day as George was walking his dogs in the park, he noticed how they attracted the attention of passing women. They seemed to like to stop what they were doing and ask him about his dogs. A young woman remarked that she would love to have a big dog like that to walk, but she had a small apartment and couldn't keep a large dog. This brief encounter was the beginning of an idea. What if there were others, possible many others, who wanted companionship of pets without the responsibility? Maybe people would be willing to pay to rent or borrow a pet for a short period of time.</p>
+
+        <p>George shared his idea with Carol and they began to look at the pros and cons related to start a small business that would rent dogs for a day.</p>
+
+        <h3>Advantages</h3>
+        <ul>
+            <li>Renters could have access to the pet at their leisure</li>
+            <li>Renters could pick the pet they wanted</li>
+            <li>Renters could exercise with the pet</li>
+            <li>Renters could have companionship of a pet</li>
+            <li>Renters would not have to pay for upkeep or medical expenses</li>
+            <li>The owners could have many pets and enjoy them</li>
+        </ul>
+
+        <h3>Disadvantages</h3>
+        <ul>
+            <li>The business would need to take care of housing and feeding</li>
+            <li>The business would need to provide medical expenses</li>
+            <li>The business would need to have liability insurance</li>
+            <li>The owners would be tied down with the care of the pets</li>
+        </ul>
+    </section>
+    <div class="clear"></div>
+    <hr>
+
+    <!-- Section 2 -->
+    <section id="today">
+        <h2>Where We Are Today...</h2>
+        <p>After weighing these points, the Smiths decided to go ahead by starting small and in the fall of 1980 started Rent a Pet. The business offered its customers the companionship of a pet without all the care of the extra expense or hassles of ownership. They began with only providing dogs for rent. Since the company's inception, Rent a Pet has extended their offerings by also adding cats, horses, pigs and snakes for rent.</p>
+        <p><a href="#top">Return to Top</a></p>
+    </section>
+    <div class="clear"></div>
+    <hr>
+
+    <!-- Section 3 -->
+    <section id="unique">
+        <h2>What Makes Us Unique...</h2>
+        <p>Rent a Pet has expanded from its early location in Provo and now has franchises in Logan, Bountiful, Salt Lake City, and St. George. They employ their own trained vet and have yet to have any accidents due to their rental pets. Rent a Pet also employs an animal trainer who works with the dogs and horses daily.</p>
+
+        <p>Rent a Pet has attracted many satisfied customers. The company frequently provides their services to senior citizens who reside in retirement homes that prohibit pet ownership. A senior can enjoy a dog or cat for the day and even take them for a walk. Surprisingly, young men looking to strike up a conversation with young women often rent dogs that like jogging or playing Frisbee. Specially trained trick dogs can be rented for parties or appearances in movies or commercials. The most unusual pet, snakes, are usually rented for Halloween or other occasions where the customer wants to use them for shock value.</p>
+        <p><a href="#top">Return to Top</a></p>
+    </section>
+    <div class="clear"></div>
+    <hr>
+
+    <!-- Section 4 -->
+    <section id="press">
+        <h2>Press Releases</h2>
+        <h3>Horse and Hound Magazine, January 20, 2011</h3>
+        <p>"An exciting opportunity for pet lovers who don't have room or time for ownership of their own pets is now available through Rent a Pet. This company has found a niche by providing on-demand time with a variety of pets from dogs and cats to horses, pigs and even snakes. Their rates are reasonable and they will even deliver and pick up the pet of your choice."</p>
+
+        <h3>Pet Weekly, August 15, 2012</h3>
+        <p>"Rent a Pet provides its customers with the chance to enjoy companionship of a wide variety of pets. Did you ever wish your dog had special talents like the trick dogs you see in movies or on TV? Did you ever want to go for a horseback ride, but you didn't know where to find a horse? All you have to do now is rent a talented pet and your friends will be amazed."</p>
+        <p><a href="#top">Return to Top</a></p>
+    </section>
+
+</body>
+</html>

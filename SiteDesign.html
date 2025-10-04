@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SiteDesign — Rent A Pet</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        body{ font-family: Arial, Helvetica, sans-serif; background:#FFF; color:#222; margin:1.5rem; }
+        .swatch{ display:inline-block; width:160px; height:90px; margin:.6rem; border-radius:6px; box-shadow: 0 1px 0 rgba(0,0,0,0.05); }
+        .label{ font-size:0.95rem; margin-top:.4rem; }
+        .row{ display:flex; flex-wrap:wrap; align-items:flex-start; gap:1rem; }
+        .card{ padding:.8rem; border:1px solid #eee; border-radius:6px; background:#fff; width:100%; max-width:720px; }
+    </style>
+</head>
+<body>
+    <h1>SiteDesign — Rent A Pet (Warm Palette)</h1>
+    <p>This page shows the color palette used across AboutUs.html and Tributes.html. Use these hex values when adding future styles.</p>
+
+    <div class="card">
+        <div class="row">
+            <div>
+                <div class="swatch" style="background:#FFF8F0"></div>
+                <div class="label">--bg: <strong>#FFF8F0</strong> (Warm cream — page background)</div>
+            </div>
+            <div>
+                <div class="swatch" style="background:#333333"></div>
+                <div class="label">--text: <strong>#333333</strong> (Main text)</div>
+            </div>
+            <div>
+                <div class="swatch" style="background:#C1572B"></div>
+                <div class="label">--accent: <strong>#C1572B</strong> (Primary accent — headings)</div>
+            </div>
+            <div>
+                <div class="swatch" style="background:#8A4B2A"></div>
+                <div class="label">--accent-2: <strong>#8A4B2A</strong> (Links / secondary accent)</div>
+            </div>
+            <div>
+                <div class="swatch" style="background:#6B8E23"></div>
+                <div class="label">--muted: <strong>#6B8E23</strong> (Olive-green accent)</div>
+            </div>
+        </div>
+
+        <hr>
+        <h3>CSS snippet used on site</h3>
+        <pre>
+:root{
+  --bg: #FFF8F0;
+  --text: #333333;
+  --accent: #C1572B;
+  --accent-2: #8A4B2A;
+  --muted: #6B8E23;
+}
+body{ background-color:var(--bg); color:var(--text); }
+a:link{ color:var(--accent-2); } a:hover{ color:var(--accent); }
+        </pre>
+    </div>
+</body>
+</html>
