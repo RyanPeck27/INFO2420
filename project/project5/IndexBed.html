@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent-A-Pet</title>
+  <style>
+    :root {
+      --bg: #FFF8F0;
+      --text: #333333;
+      --accent: #C1572B;
+      --accent-2: #8A4B2A;
+      --muted: #6B8E23;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: var(--accent-2);
+      margin-bottom: 20px;
+    }
+    img {
+      max-width: 700px;
+      width: 100%;
+      height: auto;
+      border: 4px solid var(--accent);
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      margin-top: 30px;
+      color: var(--accent);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Rent-A-Pet</h1>
+
+  <img src="Images/mymap.jpg" alt="Rent-A-Pet homepage imagemap with links for Home, About Us, Tributes, Customer Survey, and Favorite Links" usemap="#petmap">
+
+  <map name="petmap">
+    <area shape="rect" coords="20,30,140,130" href="#" alt="Home">
+    <area shape="rect" coords="150,30,280,130" href="#" alt="About Us">
+    <area shape="rect" coords="290,30,420,130" href="#" alt="Tributes">
+    <area shape="rect" coords="430,30,560,130" href="#" alt="Customer Survey">
+    <area shape="rect" coords="570,30,690,130" href="#" alt="Favorite Links">
+  </map>
+
+  <footer>
+    <p>&copy; 2025 Rent-A-Pet | Designed for INFO 2420 Project 5</p>
+  </footer>
+</body>
+</html>
