@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent-A-Pet – Graphics</title>
+
+  <style>
+    :root {
+      --bg: #FFF8F0;      /* Soft cream background */
+      --text: #333333;    /* Dark gray text */
+      --accent: #C1572B;  /* Primary orange-brown */
+      --accent-2: #8A4B2A;/* Deep rust tone */
+      --muted: #6B8E23;   /* Olive green accent */
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: var(--accent-2);
+    }
+
+    header img {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border: 4px solid var(--accent);
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Logo Section */
+    .logo {
+      margin-top: 20px;
+    }
+    .logo img {
+      width: 130px;
+      height: auto;
+      border: 3px solid var(--muted);
+      border-radius: 16px;
+      background-color: var(--bg);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .logo img:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 6px var(--accent-2)) saturate(1.2);
+    }
+
+    /* Print Button Styles */
+    .button img {
+      width: 200px;
+      height: 50px;
+      border-radius: 10px;
+      border: 2px solid var(--accent);
+      margin-top: 10px;
+    }
+
+    /* Optional CSS fallback (if images not loaded) */
+    .button a {
+      display: inline-block;
+      background-color: var(--accent);
+      color: white;
+      font-weight: bold;
+      padding: 12px 40px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    .button a:hover {
+      background-color: var(--accent-2);
+      color: var(--bg);
+    }
+
+    /* Image Swap Styling */
+    #thumbs, #image {
+      width: 700px;
+      border: solid 1px #000;
+      text-align: center;
+      margin: 0 auto 20px auto;
+      color: #000;
+      background: #eee;
+      padding: 10px;
+    }
+
+    #thumbs img {
+      border: solid 1px #000;
+      margin: 5px;
+      width: 120px;
+      height: 80px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    #thumbs img:hover {
+      transform: scale(1.05);
+      border-color: var(--accent-2);
+    }
+
+    #image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .background-preview img {
+      width: 900px;
+      height: 150px;
+      border: 2px solid var(--accent);
+      margin-top: 20px;
+      border-radius: 12px;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: var(--accent-2);
+      font-size: 0.9rem;
+    }
+  </style>
+
+  <script>
+    function preloadImages() {
+      const images = [
+        'Images/print2.jpg',
+        'Images/logo2.jpg',
+        'Images/HamsterLg.jpg',
+        'Images/Horse1Lg.jpg',
+        'Images/HuntingDogsLg.jpg',
+        'Images/KidsDogLg.jpg'
+      ];
+      images.forEach(src => { const img = new Image(); img.src = src; });
+    }
+
+    function changeImage(newSrc, newTitle) {
+      document.getElementById('mainImage').src = newSrc;
+      document.getElementById('imageTitle').textContent = newTitle;
+    }
+  </script>
+</head>
+
+<body onload="preloadImages()">
+  <header>
+    <h1>Rent-A-Pet</h1>
+    <img src="banner6.jpg" alt="Rent-A-Pet banner showing cats and dogs">
+  </header>
+
+  <!-- Logo Rollover -->
+  <section class="logo">
+    <h2>Logo Rollover</h2>
+    <a href="#"
+      onmouseover="document.getElementById('logo').src='Images/logo2.jpg';"
+      onmouseout="document.getElementById('logo').src='Images/logo1.jpg';">
+      <img src="Images/logo1.jpg" alt="Rent-A-Pet logo" id="logo">
+    </a>
+  </section>
+
+  <!-- Print Button Rollover -->
+  <section class="button">
+    <h2>Print Page Button Rollover</h2>
+    <a href="#"
+      onmouseover="document.getElementById('print').src='Images/print2.jpg';"
+      onmouseout="document.getElementById('print').src='Images/print1.jpg';">
+      <img src="Images/print1.jpg" alt="Print Page button" id="print">
+    </a>
+  </section>
+
+  <!-- Image Swap Section -->
+  <section class="swap">
+    <h2>Image Swap Gallery</h2>
+    <div id="image">
+      <h3 id="imageTitle">Pet Photo 1</h3>
+      <img id="mainImage" src="Images/HamsterLg.jpg" alt="Main pet image">
+    </div>
+    <div id="thumbs">
+      <img src="Images/HamsterSm.jpg" alt="Hamster thumbnail"
+           onmouseover="changeImage('Images/HamsterLg.jpg', 'Hamster')">
+      <img src="Images/Horse1Sm.jpg" alt="Horse thumbnail"
+           onmouseover="changeImage('Images/Horse1Lg.jpg', 'Horse')">
+      <img src="Images/HuntingDogsSm.jpg" alt="Hunting Dogs thumbnail"
+           onmouseover="changeImage('Images/HuntingDogsLg.jpg', 'Hunting Dogs')">
+      <img src="Images/KidsDogSmall.jpg" alt="Kids with Dog thumbnail"
+           onmouseover="changeImage('Images/KidsDogLg.jpg', 'Kids with Dog')">
+    </div>
+  </s
