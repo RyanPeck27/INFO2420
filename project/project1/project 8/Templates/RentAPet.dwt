@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rent-A-Pet — About Us</title>
+  <link rel="stylesheet" href="../mystyles.css">
+  <script src="../myscripts.js" defer></script>
+</head>
+<body onload="initPage()">
+
+  <header id="siteHeader">
+    <div class="container header-inner">
+      <div class="branding">
+        <img id="logo" src="../blaqqcat.jpg" alt="Rent-A-Pet logo" />
+      </div>
+
+      <nav id="mainNav" aria-label="Main navigation">
+        <ul>
+          <li><a href="../Home.html">Home</a></li>
+          <li><a href="../AboutUs.html">About Us</a></li>
+          <li><a href="../Tributes.html">Tributes</a></li>
+          <li><a href="../Survey.html">Survey</a></li>
+          <li><a href="../Favorites.html">Favorites</a></li>
+        </ul>
+      </nav>
+    </div>
+    <img class="banner" src="../banner6.jpg" alt="Rent-A-Pet banner">
+  </header>
+
+  <section id="content" class="container">
+    <article id="mainArticle"><!-- TemplateBeginEditable name="PageContent" -->PageContent<!-- TemplateEndEditable -->
+      <h1>Welcome to Rent‑A‑Pet</h1>
+
+      <!-- Required welcome text (from PetsWelcome.txt) -->
+      <p class="welcome">
+        Welcome to <strong>Rent‑A‑Pet</strong> — your friendly neighborhood service for short-term pet
+        experiences. Whether you want to try out pet ownership, need a playing companion for the weekend,
+        or want a calm animal to help brighten a special event, Rent‑A‑Pet connects you with well‑cared‑for
+        animals and responsible caretakers.
+      </p>
+
+      <h2>Our Photo Gallery</h2>
+      <div id="gallery">
+        <div id="mainImage" class="image-box" aria-live="polite">
+          <h3 id="imageTitle">Hamster</h3>
+          <img id="display" src="../Images/HamsterLg.jpg" alt="Large pet photo">
+        </div>
+
+        <div id="thumbs" class="thumbs">
+          <img src="../HamsterSm.jpg" alt="Hamster thumbnail" data-large="HamsterLg.jpg" data-title="Hamster">
+          <img src="../Horse1Sm.jpg" alt="Horse thumbnail" data-large="Horse1Lg.jpg" data-title="Horse">
+          <img src="../HuntingDogsSm.jpg" alt="Hunting dogs thumbnail" data-large="HuntingDogsLg.jpg" data-title="Hunting dogs">
+          <img src="../KidsDogSmall.jpg" alt="Kids and dog thumbnail" data-large="KidsDogLg.jpg" data-title="Kids and dog">
+        </div>
+      </div>
+
+      <h2>Mini‑Tribute</h2>
+      <div class="mini-tribute">
+        <img src="../HamsterSm.jpg" alt="Tribute thumbnail" class="tribute-thumb">
+        <p>
+          We celebrate Daisy, a gentle rescue who helped dozens of families find joy. Daisy’s story and full tribute
+          is available on the Tributes page. <a href="../Tributes.html">Read more &raquo;</a>
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <footer id="siteFooter">
+    <div class="container">
+      <p>Webmaster: <a href="mailto:RentAPet@gmail.com.com">RentAPet@gmail.com</a></p>
+      <p><em>This web site has been created solely for educational purposes.</em></p>
+    </div>
+  </footer>
+
+</body>
+</html>
